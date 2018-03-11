@@ -36,8 +36,8 @@ bugs:
   <h2>{{page.title}}</h2>
   {% for bug in page.bugs %}
   <div class="grid-middle spacer">
-    <div class="col-12 bug-bg" style="background-image:url('{{bug.pic_path}}')">
-
+    <div class="col-12 bug-bg">
+      <img src="{{bug.pic_path}}" alt="{{bug.title}}">
     </div>
     <div class="shifted">
       <h3>{{bug.name}}</h3>

@@ -6,7 +6,7 @@
 }
 
 img{
-  max-width: 100%;
+  width: 100%;
 }
 a{
   color: inherit;
@@ -37,9 +37,13 @@ header{
 }
 
 .bug-bg{
-  min-height: 50vh;
   background-position: center;
   background-size: cover;
+}
+
+.spacer{
+  margin-bottom: 5vw;
+  position: relative;
 }
 
 
@@ -47,6 +51,9 @@ header{
   background-color: rgba(255, 255, 255, 0.66);
   position: absolute;
   padding: 2vw;
+  top: 50%;
+  -webkit-transform: translateY(-56%);
+          transform: translateY(-56%);
 }
 
 .spacer:nth-child(2n+1){
@@ -62,9 +69,4 @@ header{
 .spacer:nth-child(2n+1) .shifted{
   left:7vw;
   text-align: right;
-}
-
-
-.spacer{
-  margin-bottom: 5vw;
 }
