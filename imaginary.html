@@ -1,0 +1,48 @@
+---
+layout: default
+tittle: bugs
+bugs:
+  - name: dave
+    pic_path: https://picsum.photos/200/300/?random
+    stats:
+      - thing
+      - thing
+      - thing
+  - name: dave
+    pic_path: https://picsum.photos/200/300/?random
+    stats:
+      - thing
+      - thing
+      - thing
+  - name: dave
+    pic_path: https://picsum.photos/200/300/?random
+    stats:
+      - thing
+      - thing
+      - thing
+  - name: dave
+    pic_path: https://picsum.photos/200/300/?random
+    stats:
+      - thing
+      - thing
+      - thing
+---
+
+<section class="reverser">
+  <h2>{{page.title}}</h2>
+  {% for bug in page.bugs %}
+  <div class="grid-middle spacer">
+    <div class="col-12 bug-bg" style="background-image:url('{{bug.pic_path}}')">
+
+    </div>
+    <div class="shifted">
+      <h3>{{bug.name}}</h3>
+      <ul>
+      {% for stat in bug.stats %}
+        <li>{{stat}}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+</section>
